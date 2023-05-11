@@ -15,6 +15,6 @@ RSpec.describe Present do
   it "fails when trying to wrap a present already wrapped" do
     present = Present.new
     present.wrap("perfume")
-    expect { present.wrap("clothes") }.to raise_error "No contents have been wrapped"
+    expect { present.wrap("clothes") }.to raise_error "A contents has already been wrapped."
   end
 end
